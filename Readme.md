@@ -8,3 +8,32 @@
 Для работы с документом рекомендуем использовать свободно распространяемую библиотеку OpenXML или ClosedXML.
 
 Приложение должно реализовывать основные принципы ООП и иметь дружелюбный интерфейс.
+
+## Запуск
+
+> [!IMPORTANT]
+> Для запуска приложения требуется установленный SDK .NET 8 (https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+
+Склонировать проект
+
+```bash
+  git clone https://github.com/big4oot/Akelon.Task_2.git
+```
+
+Перейти в Akelon.Task_2
+
+```bash
+  cd Akelon.Task_2
+```
+
+Выполнить restore пакетов
+
+```bash
+  dotnet restore 
+```
+
+Запустить проект
+
+```bash
+  dotnet run
+```
