@@ -23,7 +23,7 @@ builder.Services.AddMediatR(cfg =>
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 builder.Services.AddSingleton(new Config());
-builder.Services.AddScoped<ExcelContext>();
+builder.Services.AddTransient<ExcelContext>();
 builder.Services.AddTransient<ClientsRepository>();
 builder.Services.AddTransient<OrdersRepository>();
 builder.Services.AddTransient<ProductsRepository>();
