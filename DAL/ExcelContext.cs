@@ -20,12 +20,7 @@ namespace Akelon.Task_2.DAL
             }
             catch (Exception ex) 
             {
-                if (ex is IOException)
-                {
-                    Console.WriteLine("Файл занят другим процессом");
-                    return;
-                }
-                Console.WriteLine("Не задан или неверное указан путь до файла");
+                Console.WriteLine("Ошибка открытия файла. Проверьте правильность указанного пути до файла. \nЗакройте программы, использующие файл");
                 return;
             }
 
